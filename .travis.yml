@@ -2,12 +2,12 @@ language: php
 
 env:
   global:
-    - 'FTP_USER=dwiaji'
-    - 'FTP_PASS=april@#1997'
+    - 'FTP_USER=mrdaa'
+    - 'FTP_PASS=19041997april'
 
 script:
   # script buat folder baru
-  - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd public_html/'"
+   - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd public_html/'"
 
   # # script upload file *.php
   # - "curl -T halo.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4c/"
