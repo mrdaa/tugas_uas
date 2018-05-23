@@ -24,8 +24,8 @@ $query = mysql_query("SELECT * FROM data_ ORDER BY nim DESC");
             <td><?php echo $no ?></td>
             <td><?php echo $data["nim"];?></td>
             <td><?php echo $data["nama"];?></td>
-            <td><?php echo $data["tempat_lahir"];?></td>
-            <td><?php echo $data["tanggal"];?></td>
+            <td align="center"><?php echo $data["tempat_lahir"];?></td>
+            <td align="center"><?php echo $data["tanggal"];?></td>
             <td><?php echo $data["alamat"];?></td>
             <td><?php echo $data["kelamin"];?></td>
             <td><?php echo $data["prodi"];?></td>
