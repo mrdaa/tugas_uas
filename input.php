@@ -55,7 +55,7 @@
             </tr>
             <tr>
                 <td>Alamat</td><td>:</td>
-                <td><textarea name="alamat" cols="28" rows"4" id="alamat"></textarea></td>
+                <td><textarea name="alamat" cols="32" rows"4" id="alamat"></textarea></td>
             </tr>
             <tr>
                 <td>Jenis Kelamin</td><td>:</td>
@@ -63,6 +63,10 @@
                     <input name="kelamin" type="radio" value="L" checked>Laki-laki
                     <input name="kelamin" type="radio" value="P" >Perempuan
                 </td>
+            </tr>
+            <tr>
+                <td>Prodi</td><td>:</td>
+                <td><input name="prodi" type="text" id="prodi" size="30" maxlength="30"></td>
             </tr>
         </table>
         <tr>
