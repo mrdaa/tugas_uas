@@ -1,0 +1,16 @@
+{
+    "name": "mrdaa/uas", 
+    "type": "project",
+    "authors": [
+        {
+            "name": "mrdaa",
+            "email": "d.aji.apriyadi@gmail.com",
+            "role": "programmer"
+        }, {
+            "name": "aji"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^5.6.28"
+    }
+}

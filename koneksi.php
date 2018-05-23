@@ -7,7 +7,7 @@
   mysql_select_db($dbname) or die  (mysql_error());
   if($conn)
     {
-    echo ("koneksi sukses");
+    echo ("");
     }
     else
     {

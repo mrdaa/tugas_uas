@@ -18,7 +18,7 @@
             </tr>
             <tr>
                 <td>NIM</td><td>:</td>
-                <td><input name="nim" type="text" id="nim" size="12" maxlength="12"></td>
+                <td><input name="nim" type="text" id="nim" size="10" maxlength="12"></td>
             </tr>
             <tr>
                 <td>Nama</td><td>:</td>
@@ -64,7 +64,7 @@
             <tr>
                 <td>Jenis Kelamin</td><td>:</td>
                 <td>
-                    <input name="kelamin" type="radio" value="L" >Laki-laki
+                    <input name="kelamin" type="radio" value="L" checked>Laki-laki
                     <input name="kelamin" type="radio" value="P" >Perempuan
                 </td>
             </tr>
@@ -72,9 +72,8 @@
         <tr>
         <td align="center"><input type="submit" value="Simpan">
         <input type="reset" value="Reset">
-        <input type=""    
-        </td></tr>
-        
-</form>    
+        <input type="button" value="Kembali" onclick="window.location = 'index.html';">
+        </td></tr>    
+</form> 
 </body>
 </html>

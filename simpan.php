@@ -6,9 +6,9 @@
     $tanggal=$_POST['thn']."-".$_POST['bln']."-".$_POST['tgl'];
     $alamat=$_POST['alamat'];
     $kelamin=$_POST['kelamin'];
-if(empty($nim) || empty($nama) || empty($tempat) || empty($alamat))
+if(empty($nim) || empty($nama) || empty($tempat) || empty($alamat) || empty($kelamin))
     {
-        echo"<h3>Data belum lengkap, silahkan lengkapi data anda</h3><a href='input.php>kembali</a>";
+        echo"<h3>Data belum lengkap, silahkan lengkapi data anda</h3><a href='input.php'>kembali</a>";
     }
 else 
     {
