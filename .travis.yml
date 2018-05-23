@@ -6,14 +6,15 @@ env:
     - 'FTP_PASS=19041997april'
 
 script:
+  - "curl -T koneksi.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
+  - "curl -T input.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
+  - "curl -T simpan.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
   # script buat folder baru
   #  - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd public_html/'"
 
   # # script upload file *.php
   # - "curl -T halo.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4c/"
-  - "curl -T koneksi.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
-   - "curl -T input.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
-   - "curl -T simpan.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
+  
   # - "curl -T form-edit.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4c/"
   # - "curl -T update.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4c/"
   # - "curl -T hapus.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4c/"
