@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<?php include "koneksi.php";?>
 <html>
 <head>
-    <title>Entry Data Mahasiswa</title>
+    <title>Update Data Mahasiswa</title>
 </head>
 <body>
     <form action="simpan.php" method="post">
