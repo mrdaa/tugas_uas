@@ -22,6 +22,6 @@
         echo "<br>Gagal di simpan";
         
     }
-    echo "<a align='center' class='button' href='index.php'>+ Input Data</a>";
+  
     $conn->close();
 ?>
