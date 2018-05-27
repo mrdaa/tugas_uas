@@ -9,6 +9,7 @@ env:
     - 'FTP_USER=mrdaa'
     - 'FTP_PASS=19041997april'
 
+    
 script:
   # script buat folder baru
  - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd public_html/'"
