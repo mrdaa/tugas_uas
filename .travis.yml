@@ -18,4 +18,4 @@ script:
   - "curl -T koneksi.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
   - "curl -T simpan.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
   - "curl -T update.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
-  - "curl -T assets/style.css -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/assets"
+  - "curl -T assets/style.css -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/assets/"
