@@ -16,3 +16,6 @@ script:
   - "curl -T index.html -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
   - "curl -T laporan.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
   - "curl -T style.css -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
+  addons:
+    apt:
+      update: true
