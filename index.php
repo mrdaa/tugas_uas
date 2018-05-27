@@ -21,10 +21,10 @@ $data = $conn->query($query);
             <th>No</th>
             <th>NIM</th>
             <th>Nama</th>
+            <th>Jenis Kelamin</th>
             <th>Tempat Lahir</th>
             <th>Tanggal Lahir</th>
             <th>Alamat</th>
-            <th>Jenis Kelamin</th>
             <th>Prodi</th>
             <th></th>
         </tr>
