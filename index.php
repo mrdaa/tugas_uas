@@ -36,7 +36,7 @@ $data = $conn->query($query);
             <td><?php echo $no ;?></td>
             <td><?php echo $row["nim"];?></td>
             <td><?php echo $row["nama"];?></td>
-            <td><?php echo $row["gender"] == 'L' ? 'Laki-laki':'Prempuan';?></td>
+            <td><?php echo $row["gender"] == 'L' ? 'Laki-laki':'Perempuan';?></td>
             <td><?php echo $row["tempat_lahir"];?></td>
             <td><?php $tgl = $row["tanggal"]; echo date("d-m-Y",strtotime($tgl))?></td>
             <td><?php echo $row["alamat"];?></td>
