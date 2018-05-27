@@ -26,32 +26,7 @@
             </tr>
             <tr>
                 <td>Tanggal Lahir</td><td>:</td>
-                <td><select name="tgl" size="1" id="tgl">
-                <?php
-                    for ($i=1;$i<=31;$i++)
-                    {
-                    echo "<option  value=".$i.">".$i."</option>";
-                    }
-                    ?>
-                    </select>
-                    <select  name="bln" size="1" id="bln">
-                    <?php
-                    $bulan=array("","Januari","Pebruari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember");
-                    for ($i=1;$i<=12;$i++)
-                    {
-                    echo "<option  value=".$i.">".$bulan[$i]."</option>";
-                    }
-                ?>
-                </select>
-                <select  name="thn" size="1" id="thn">
-                <?php
-                    for ($i=1990;$i<=2010;$i++)
-                    {
-                    echo "<option  value=".$i.">".$i."</option>";
-                    }
-                ?>
-                </select>
-                </td>
+                <td><input type="date" name="tanggal" id="tanggal"></td>
             </tr>
             <tr>
                 <td>Alamat</td><td>:</td>
@@ -66,7 +41,16 @@
             </tr>
             <tr>
                 <td>Prodi</td><td>:</td>
-                <td><input name="prodi" type="text" id="prodi" size="30" maxlength="30"></td>
+                <td><select name ="prodi">
+                    <option value="">Pilih Prodi</option>
+                    <option value="D4 Teknik Informatika">D4 Teknik Informatika</option>
+                    <option value="D3 Kebidanan">D3 Kebidanan</option>
+                    <option value="D3 Farmasi">D3 Farmasi</option>
+                    <option value="D3 Akuntansi">D3 Akuntansi</option>
+                    <option value="D3 Teknik Komputer">D3 Teknik Komputer</option>
+                    <option value="D3 Teknik Mesin">D3 Teknik Mesin</option>
+                    <option value="D3 Teknik Elektro">D3 Teknik Elektro</option>
+                </select></td>
             </tr>
         </table>
         <tr>

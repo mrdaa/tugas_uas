@@ -10,6 +10,6 @@
     } else {
         echo "Error deleting record: " . $conn->error;
     }
-    echo '<br><a align="center" class="button" href="index.php">Home</a>';
+        echo '<br><a align="center"  href="index.php">Home</a>';
     $conn->close();
 ?>

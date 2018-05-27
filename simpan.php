@@ -1,12 +1,12 @@
 <?php
     include "koneksi.php";
-    $nim=$_POST['nim'];
-    $nama=$_POST['nama'];
-    $tempat=$_POST['tempat'];
-    $tanggal=$_POST['thn']."-".$_POST['bln']."-".$_POST['tgl'];
-    $alamat=$_POST['alamat'];
-    $gender=$_POST['gender'];
-    $prodi=$_POST['prodi'];
+    $nim    = $_POST['nim'];
+    $nama   = $_POST['nama'];
+    $tempat = $_POST['tempat'];
+    $tanggal= $_POST['tanggal'];
+    $alamat = $_POST['alamat'];
+    $gender = $_POST['gender'];
+    $prodi  = $_POST['prodi'];
     if(empty($nim) || empty($nama) || empty($tempat) || empty($alamat) || empty($gender))
         {
             echo"<h3>Data belum lengkap, silahkan lengkapi data anda</h3><a href='input.php'>kembali</a>";
@@ -20,7 +20,7 @@
         header("location:index.php");
     }else{
         echo "<br>Gagal di simpan";
-        
+        echo '<br><a align="center" href="input.php">kembali</a>';
     }
   
     $conn->close();
