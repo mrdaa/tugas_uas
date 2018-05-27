@@ -1,8 +1,8 @@
 <?php
   $dbserver="localhost";
-  $dbusername="id5886003_root";
-  $dbpassword="qwerty123";
-  $dbname="id5886003_dbmahasiswa";
+  $dbusername="root";
+  $dbpassword="";
+  $dbname="maha";
   $conn = new mysqli($dbserver,$dbusername,$dbpassword,$dbname)or die(mysql_error());
 
   if($conn)

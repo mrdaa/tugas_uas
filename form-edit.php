@@ -6,7 +6,7 @@
     <?php
         include "koneksi.php";
         $nim=$_GET['nim'];
-        
+
         if($conn->connect_error){
             echo "Gagal Koneksi : ". $conn->connect_error;
         }
@@ -31,7 +31,7 @@
                 $gender     = $row["gender"];
                 $prodi      = $row["prodi"];
             }
-        }      
+        }
     ?>
 
     <form action="update.php" method="post">
@@ -59,15 +59,15 @@
                 <td><input name="tanggal" type="date" id="tanggal" value="<?php echo $tanggal;?>" ></td>
             </tr>
             <tr>
-                <td>Alamat</td><td>:</td>
-                <td><textarea name="alamat" cols="32" rows"4" id="alamat" ><?php echo $alamat; ?></textarea></td>
-            </tr>
-            <tr>
                 <td>Jenis Kelamin</td><td>:</td>
                 <td>
-                    <input name="gender" type="radio" value="L" <?php if($gender=='L') echo "checked";?>>Laki-laki
-                    <input name="gender" type="radio" value="P" <?php if($gender=='P') echo "checked";?>>Perempuan
+                    <input name="gender" type="radio" value="L" checked>Laki-laki
+                    <input name="gender" type="radio" value="P" >Perempuan
                 </td>
+            </tr>
+            <tr>
+                <td>Alamat</td><td>:</td>
+                <td><textarea name="alamat" cols="32" rows"4" id="alamat" ><?php echo $alamat; ?></textarea></td>
             </tr>
             <tr>
                 <td>Prodi</td><td>:</td>
@@ -86,10 +86,20 @@
         <tr>
         <td align="center"><input type="submit" value="Simpan">
         <input type="button" value="Kembali" onclick="window.location = 'index.php';">
-        </td></tr>    
+        </td></tr>
 </form>
-<footer>
+<style>
+.footer {
+    background:#f0f0f0;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    color:#808080;
+}
+</style>
+<footer class="footer">
 Copyright &copy; 2018 by Dwi Aji Apriyadi aka. @mr.daa
-</footer> 
+</footer>
 </body>
 </html>

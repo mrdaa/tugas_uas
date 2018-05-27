@@ -5,7 +5,7 @@
 </head>
 <body>
     <form action="simpan.php" method="post">
-        <table align="center" width="40%" border="0" cellpadding="0" cellspacing="1" bgcolor="blueocean">
+        <table class="input" align="center" width="40%" border="0" cellpadding="0" cellspacing="1" bgcolor="blueocean">
             <tr>
             <td  height="40" align="center"  bgcolor="blueocean"><strong><font  color="white">ENTRY DATA</font></strong></td>
             </tr>
@@ -29,15 +29,15 @@
                 <td><input type="date" name="tanggal" id="tanggal"></td>
             </tr>
             <tr>
-                <td>Alamat</td><td>:</td>
-                <td><textarea name="alamat" cols="32" rows"4" id="alamat"></textarea></td>
-            </tr>
-            <tr>
                 <td>Jenis Kelamin</td><td>:</td>
                 <td>
                     <input name="gender" type="radio" value="L" checked>Laki-laki
                     <input name="gender" type="radio" value="P" >Perempuan
                 </td>
+            </tr>
+            <tr>
+                <td>Alamat</td><td>:</td>
+                <td><textarea name="alamat" cols="32" rows"4" id="alamat"></textarea></td>
             </tr>
             <tr>
                 <td>Prodi</td><td>:</td>
@@ -57,9 +57,19 @@
         <td align="center"><input type="submit" value="Simpan">
         <input type="reset" value="Reset">
         <input type="button" value="Kembali" onclick="window.location = 'index.php';">
-        </td></tr>    
-</form> 
-<footer>
+        </td></tr>
+</form>
+<style>
+.footer {
+    background:#f0f0f0;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    color:#808080;
+}
+</style>
+<footer class="footer">
 Copyright &copy; 2018 by Dwi Aji Apriyadi aka. @mr.daa
 </footer>
 </body>
