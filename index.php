@@ -52,8 +52,8 @@ $data = $conn->query($query);
     </table>
 
 </form>
-</body>
 <footer>
 Copyright &copy; 2018 by Dwi Aji Apriyadi aka. @mr.daa
 </footer>
+</body>
 </html>

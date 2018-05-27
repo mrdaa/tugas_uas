@@ -87,9 +87,9 @@
         <td align="center"><input type="submit" value="Simpan">
         <input type="button" value="Kembali" onclick="window.location = 'index.php';">
         </td></tr>    
-</form> 
-</body>
+</form>
 <footer>
 Copyright &copy; 2018 by Dwi Aji Apriyadi aka. @mr.daa
-</footer>
+</footer> 
+</body>
 </html>
