@@ -6,14 +6,14 @@ addons:
 
 env:
   global:
-    - 'FTP_USER=mrdaa'
+    - 'FTP_USER=mrdarea'
     - 'FTP_PASS=19041997april'
 
-    
+
 script:
   # script buat folder baru
- - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd public_html/'"
- - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd public_html/assets/'"
+  - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd public_html/'"
+  - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd public_html/assets/'"
 
   # script upload file *.php
   - "curl -T koneksi.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
