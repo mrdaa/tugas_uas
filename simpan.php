@@ -18,7 +18,7 @@
     if($conn->query($query)===true)
         {
             echo "<br> Data " .$nama. 'berhasil di simpan';
-            header("location:index.php");
+            echo '<br><a align="center" href="index.php">Home</a>';
         }else{
             echo "<br>Gagal di simpan";
             echo '<br><a align="center" href="input.php">kembali</a>';
