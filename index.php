@@ -62,7 +62,7 @@ $data = $conn->query($query);
 }
 </style>
 <footer class="footer">
-Copyright &copy; 2018 by Dwi Aji Apriyadi aka. @mr.daa
+Copyright &copy; 2018 by @mr.daa
 </footer>
 </body>
 </html>
