@@ -59,6 +59,7 @@
         <input type="button" value="Kembali" onclick="window.location = 'index.php';">
         </td></tr>
 </form>
+
 <style>
 .footer {
     background:#f0f0f0;

@@ -3,7 +3,7 @@
     <title>Update Data Mahasiswa</title>
 </head>
 <body>
-    <?php
+  <?php
         include "koneksi.php";
         $nim=$_GET['nim'];
 

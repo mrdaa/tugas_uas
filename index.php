@@ -9,7 +9,6 @@
 <hr>
 <a align="center" class="button" href="input.php">+ Input Data</a>
 <br><br>
-
 <?php
 include "koneksi.php";
 $query = "SELECT * FROM data_ ORDER BY nim DESC";
