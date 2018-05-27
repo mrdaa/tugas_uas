@@ -15,8 +15,6 @@
         return;
     }
 
-    //melakukan query dengan perintah UPDATE untuk update data ke database dengan kondisi WHERE nim='$nim' <- diambil dari inputan nim
-    // $query = "UPDATE data_ SET nama='$nama', tempat_lahir='$tempat', tanggal='$tanggal' alamat='$alamat',  gender='$gender',  prodi='$prodi' WHERE nim='$nim'";
     $query = "UPDATE data_ SET nama ='".$_POST["nama"]."',".
              "tempat_lahir='".$_POST["tempat"]."',".
              "alamat='".$_POST["alamat"]."',".
@@ -25,11 +23,11 @@
              "where nim= ".$_POST["nim"];
              
     if($conn->query($query)=== true){
-        echo "Data " .$nama. ' berhasil di simpan! ';  //Pesan jika proses simpan sukses
-        echo '<br><a href="index.php">Home</a>'; //membuat Link untuk kembali ke halaman edit
+        echo "Data " .$nama. ' berhasil di simpan! '; 
+        echo '<br><a href="index.php">Home</a>'; 
     }else{
-        echo 'Gagal menyimpan data! ';  //Pesan jika proses simpan gagal
-        echo '<a href="form-edit.php?nim='.$nim.'">Kembali</a>'; //membuat Link untuk kembali ke halaman edit
+        echo 'Gagal menyimpan data! '; 
+        echo '<a href="form-edit.php?nim='.$nim.'">Kembali</a>'; 
     }
     $conn->close();
 ?>

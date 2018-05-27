@@ -15,13 +15,14 @@
 
     $query= "INSERT INTO data_(nim,nama,tempat_lahir,tanggal,alamat,gender,prodi) VALUES('$nim','$nama','$tempat','$tanggal','$alamat','$gender','$prodi')";  
     
-    if($conn->query($query)===true){
-        echo "<br> Data " .$nama. 'berhasil di simpan';
-        header("location:index.php");
-    }else{
-        echo "<br>Gagal di simpan";
-        echo '<br><a align="center" href="input.php">kembali</a>';
-    }
+    if($conn->query($query)===true)
+        {
+            echo "<br> Data " .$nama. 'berhasil di simpan';
+            header("location:index.php");
+        }else{
+            echo "<br>Gagal di simpan";
+            echo '<br><a align="center" href="input.php">kembali</a>';
+        }
   
     $conn->close();
 ?>
